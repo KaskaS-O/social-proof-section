@@ -5,7 +5,8 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3%;
+    grid-template-rows: auto auto auto;
+    gap: 4%;
 
     padding: 8%;
 }
@@ -31,34 +32,90 @@
 .rates {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 100px);
-    gap: 10px;
+    grid-template-rows: repeat(3, auto);
+    gap: 15px;
+
+    text-align: center;
 
     &__rate {
+        border-radius: 8px;
+        padding: 15px;
         background-color: $text-light;
         color: $magenta-dark;
+    }
+
+    &__title {
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+
+    &__stars {
+        padding-bottom: 12px;
+
+        .star {
+            padding: 0 2px;
+        }
     }
 }
 
 .opinions {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 15px;
 
     &__card {
-        border-radius: 6px;
-        padding: 8%;
+        border-radius: 8px;
+        padding: 9%;
 
         background-color: $magenta-dark;
         color: $text-light;
     }
 
+    &__txt {
+        padding-top: 10%;
+        font-size: 1.3em;
+        font-weight: 500;
+        line-height: 1.7;
+    }
+
 }
 
-.attribution {
-    font-size: 11px;
+.user {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    align-items: center;
+
+    &__photo {
+        grid-area: 1/1/3/2;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+
+    &__name {
+        grid-area: 1/2/2/3;
+        font-size: 1.3em;
+        min-width: 50%;
+    }
+
+    &__description {
+        grid-area: 2/2/3/3;
+        color: $pink;
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+}
+
+.footer {
+    margin-top: 100px;
+
+    .attribution {
+    font-size: 1em;
     text-align: center;
-  }
-  .attribution a {
+    }
+    .attribution a {
     color: hsl(228, 45%, 44%);
-  }
+    }
+}
