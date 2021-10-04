@@ -1,3 +1,60 @@
+@import 'reset';
+@import 'variables';
+@import 'base';
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+
+    padding: 8%;
+}
+
+.intro {
+    text-align: center;
+
+    &__title {
+        padding: 15% 10% 6%;
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 1;
+        color: $magenta-dark;
+    }
+
+    &__txt {
+        font-size: 1.4em;
+        line-height: 1.6;
+        color: $magenta-light;
+    }
+}
+
+.rates {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+
+    &__rate {
+        background-color: $text-light;
+        color: $magenta-dark;
+    }
+}
+
+.opinions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    &__card {
+        border-radius: 6px;
+        padding: 8%;
+
+        background-color: $magenta-dark;
+        color: $text-light;
+    }
+
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;

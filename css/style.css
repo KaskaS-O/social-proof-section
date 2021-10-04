@@ -1,3 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 10px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 3%;
+  padding: 8%;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro__title {
+  padding: 15% 10% 6%;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1;
+  color: #502050;
+}
+
+.intro__txt {
+  font-size: 1.4em;
+  line-height: 1.6;
+  color: #937b92;
+}
+
+.rates {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (100px)[3];
+      grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+
+.rates__rate {
+  background-color: #f7f2f7;
+  color: #502050;
+}
+
+.opinions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.opinions__card {
+  border-radius: 6px;
+  padding: 8%;
+  background-color: #502050;
+  color: #f7f2f7;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
