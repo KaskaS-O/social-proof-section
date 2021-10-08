@@ -200,6 +200,7 @@ body {
 .opinions__card {
   border-radius: 8px;
   padding: 9%;
+  max-height: 240px;
   background-color: #502050;
   color: #f7f2f7;
 }

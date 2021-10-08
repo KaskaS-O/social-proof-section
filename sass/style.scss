@@ -139,6 +139,7 @@
     &__card {
         border-radius: 8px;
         padding: 9%;
+        max-height: 240px;
 
         @media (min-width: 1200px) {
             padding: 12% 9%;
