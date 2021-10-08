@@ -91,14 +91,16 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: (60px)[3];
-      grid-template-rows: repeat(3, 60px);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
   gap: 15px;
   text-align: center;
 }
 
 @media (min-width: 1200px) {
   .rates {
+    -ms-grid-rows: (60px)[3];
+        grid-template-rows: repeat(3, 60px);
     gap: 20px;
   }
 }
