@@ -53,7 +53,7 @@
 .rates {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, 1fr);
     gap: 15px;
 
     @media (min-width: 1200px) {
